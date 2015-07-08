@@ -5,6 +5,19 @@
 #define TABLESIZE 5
 #define DATASIZE 15
 
+#if 0
+//오름차순 내림차순은 부호 반대로:
+int compare const(vonst void *first, const void *second)
+{
+	if(*(int *)first > *(int *)second){
+		return 1;
+	} else if(*(int *)first < *(int *)second){
+		return -1;
+	} else{
+		return 0;
+	}
+}	
+#endif
 int compare(const void *a, const void *b)
 {
 	return strcmp((char *)a, (char *)b);
